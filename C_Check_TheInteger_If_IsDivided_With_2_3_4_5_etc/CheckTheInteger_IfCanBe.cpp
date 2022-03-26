@@ -17,6 +17,7 @@ void Check_If_TheInteger_IsDivided_By_3(int);
 void Check_If_TheInteger_IsDivided_By_9(int);
 void Check_If_TheInteger_IsDivided_By_4(int[]);
 void Check_If_TheInteger_IsDivided_By_25(int[]);
+void AnalyzeTheLast_Two_Digits(int[]);
  void main()
 {
 	int c=ImportValues();
@@ -84,6 +85,7 @@ int fourthly=ImportValue_4();
 	Sum_Of_TheValuesOf_TheArray(&array[0]);
     Check_If_TheInteger_IsDivided_By_4(&array[0]);
     Check_If_TheInteger_IsDivided_By_25(&array[0]);
+    AnalyzeTheLast_Two_Digits(&array[0]);
 	
 	return 0;
 }
@@ -307,26 +309,22 @@ void Check_If_TheInteger_IsDivided_By_25(int*array)
 	printf("\n");
     }
 }
-// Because we want to Check, if the integer which is given to us, can be divided with the numbers(10,100,1000,2,4,5,9 etc)
-//We, (as well as the compiler) have, to have a complete knowledge.We have to import the array of integers to an array of char
-//In order to do that,We need to map each digit to its corresponding ASCII value. This can be done by adding "0" ( or "48" ) to the integer.
-//The compiler automatically converts "0" to its corresponding ASCII value.
+void AnalyzeTheLast_Two_Digits(int*array)
+{
+    //Declaration of two, new values, as well as of a new array
+  int i;
+  char arry_new[4];
+  for(i=0;i<4;i++)
+  {
+      
+  }
+}
 
-//void Create_The_Integer_Array_To_a_Char_Array(int *array)
-//{
-    //Declaration of the Char array,which will be used in this function
-    //char Array_Char[3];
-    //int i;
-    //Convertion of the integer array, to a char array
-    //for(i=0;i<4;++i)
-    //{
-//	Array_Char[i] = array[i] + '0';
-    //}
-   // printf("The Char array is");
-//}
+
+
+
+
     
-
-
 
 
 
